@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0009;
+    color: #fff;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.comming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.day, .hours, .minutes, .seconds {
+    font-size: 3rem !important;
+}
+
+ h3 {
+    font-size: 1.2rem;
+}
