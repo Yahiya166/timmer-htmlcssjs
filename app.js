@@ -4,12 +4,16 @@ const mins = document.getElementById("minutes");
 const secs = document.getElementById("seconds");
 
 function CountDown() {
-    const countDate = new Date("July 29, 2021 00:00:00").getTime();
+    const countDate = new Date("Auguest 14 , 2021 00:00:00").getTime();
+    // const countDate = new Date("July 30 , 2021 00:00:00").getTime();
     const nowDate = new Date().getTime();
     const gapDate = countDate - nowDate;
     // console.log(countDate);
     // console.log(nowDate);
     // console.log(gapDate);
+
+
+
 
     // How the time is work?
     const second = 1000;
@@ -32,10 +36,15 @@ function CountDown() {
     mins.innerHTML = textMinutes;
 
     const textSeconds = Math.floor((gapDate % minutes) / second);
-    // console.log(textSeconds);
+    // console.log(textSeconds);   
     secs.innerHTML = textSeconds;
 
 
 }
 
-setInterval(CountDown,1000)
+
+let interval = setInterval(CountDown,1000);
+
+// if(textDay === 0 & textHour == 0 & textMinutes == 0 & textSeconds == 0){
+//     clearInterval(interval);
+// }
